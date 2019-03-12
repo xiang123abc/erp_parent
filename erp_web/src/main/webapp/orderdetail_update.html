@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>员工管理</title>
+<link rel="stylesheet" type="text/css" href="ui/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="ui/themes/icon.css">
+<script type="text/javascript" src="ui/jquery.min.js"></script>
+<script type="text/javascript" src="ui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="ui/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="ui/jquery.serializejson.min.js"></script>
+<script type="text/javascript" src="ui/date.js"></script>
+<script type="text/javascript" src="js/orderdetail_update.js"></script>
+<script type="text/javascript">
+	
+var orderdetailId = '';
+</script>
+</head>
+<body>
+<div class="easyui-panel" style="padding-left:4px;border-bottom:0px;">
+	<div style="height:2px;"></div>
+	<form id="searchForm">
+	<table>
+			订单号:
+			<input name="t1.orderscode">
+			<!-- 客户:
+			<input name="t1.suppliercode">
+		           下单日期:
+		    <input name="t1.starttime" class="easyui-datebox">至<input name="t2.starttime" class="easyui-datebox"> -->
+	</table>
+	<button id="btnSearch" type="button">查询</button>
+</form>
+	<div style="height:2px;"></div>
+</div>
+<table id="grid"></table>
+
+<div id="editDlg">
+	<form id="editForm">
+			<input name="t.uuid" type="hidden"> 
+			<input name="t.area" type="hidden"> 
+			<input name="t.price" type="hidden"> 
+			<input name="t.money" type="hidden"> 
+		<table>
+		     <tr>
+				<td>商品名称</td>
+				<td><input name="t.goodsname" class="easyui-validatebox" data-options="
+					required:true,missingMessage:'名称不能为空!'
+					">
+			 </td>
+			</tr>
+			<tr>
+				<td>高</td>
+				<td><input name="t.height" class="easyui-validatebox" data-options="
+					required:true,missingMessage:'高不能为空!'
+					">
+				</td>
+			</tr>
+			<tr>
+				<td>宽</td>
+				<td><input name="t.weight" class="easyui-validatebox" data-options="
+					required:true,missingMessage:'宽不能为空!'
+					">
+				</td>
+			</tr>
+			<tr>
+				<td>数量</td>
+				<td><input name="t.num" class="easyui-validatebox" data-options="
+					required:true,missingMessage:'宽不能为空!'
+					">
+				</td>
+			</tr>		
+			<tr>
+				<td>开孔类型</td>
+				<td><input name="t.goodstype">
+				</td>
+			</tr>
+			<tr>
+				<td>备注</td>
+				<td><input name="t.note">
+				</td>
+			</tr>			
+			<!-- <tr>
+				<td>部门</td><td><input name="t.dep.uuid" class="easyui-combobox" data-options="
+					url:'dep_list', textField:'name', valueField:'uuid',required:true
+				"> </td>
+			</tr> -->
+
+		</table>
+		<button id="btnSave" type="button">保存修改</button>
+	</form>
+</div>
+
+</body>
+</html>

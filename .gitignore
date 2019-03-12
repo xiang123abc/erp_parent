@@ -1,0 +1,7 @@
+/.jsdtscope
+/.settings
+/target/
+/erp_biz/target/
+/erp_daoarget/
+/erp_entity/target/
+/erp_web/target/

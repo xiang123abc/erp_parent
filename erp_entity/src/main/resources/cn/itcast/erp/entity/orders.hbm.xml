@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="cn.itcast.erp.entity.Orders" table="orders" >
+        <id name="orderscode"> 
+         <generator class="assigned" /> 
+       </id> 
+       
+       <property name="uuid" /> 
+       <property name="color" /> 
+       <property name="material" /> 
+       <property name="model" /> 
+        <property name="starttime" /> 
+        <property name="endtime" /> 
+        <property name="type" />       
+        <property name="starter" /> 
+        <property name="ender" /> 
+        <property name="suppliercode" /> 
+        <property name="totalmoney" /> 
+        <property name="totalarea" /> 
+        <property name="address" /> 
+        <property name="state" /> 
+        <property name="sn" /> 
+       <bag name="orderdetails" cascade="save-update">
+          <key column="orderscode"></key>
+          <one-to-many class="cn.itcast.erp.entity.Orderdetail"/>
+        </bag> 
+ 
+    </class>
+</hibernate-mapping>

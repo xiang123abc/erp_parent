@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>订单查询</title>
+<link rel="stylesheet" type="text/css" href="ui/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="ui/themes/icon.css">
+<link rel="stylesheet" type="text/css" href="css/table.css">
+<script type="text/javascript" src="ui/jquery.min.js"></script>
+<script type="text/javascript" src="ui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="ui/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="ui/jquery.serializejson.min.js"></script>
+<script type="text/javascript" src="ui/date.js"></script>
+<script type="text/javascript" src="js/report.js"></script>
+<script type="text/javascript">
+
+</script>
+</head>
+<body>
+<div class="easyui-panel" style="padding-left:4px;border-bottom:0px;">
+<div style="height:2px;"></div>
+ <form id="searchForm" action="orders_exportAll.action" method="post">
+	<table>
+			客户:
+			<input id="suppliercode" name="t1.suppliercode"><br>
+			<div style="height:4px;"></div>
+		           下单日期:
+		    <input id="beforeDate" name="t1.starttime" class="easyui-datebox">&nbsp&nbsp&nbsp至&nbsp&nbsp&nbsp&nbsp<input id ="afterDate" name="t2.starttime" class="easyui-datebox">
+	</table>
+	<button id="btnSearch" type="button">查询</button>
+	<button id="doExport" type="button">导出</button>
+</form>
+<div style="height:2px;"></div>
+</div>
+<table id="grid"></table>
+</body>
+</html>

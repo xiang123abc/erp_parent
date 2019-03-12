@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/tx 
+		http://www.springframework.org/schema/tx/spring-tx.xsd
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop.xsd
+		">  
+	
+	<bean id="depAction" class="cn.itcast.erp.action.DepAction"  scope="prototype">
+		<property name="depBiz" ref="depBiz" />
+		
+	</bean>
+	<bean id="empAction" class="cn.itcast.erp.action.EmpAction" scope="prototype">
+		<property name="empBiz" ref="empBiz" />
+		
+	</bean>
+	<bean id="loginAction" class="cn.itcast.erp.action.LoginAction" scope="prototype">
+		
+	</bean>
+	<!-- 商品 -->	
+	<bean id="goodsAction" class="cn.itcast.erp.action.GoodsAction" scope="prototype">
+		<property name="goodsBiz" ref="goodsBiz" />
+	</bean>
+
+	<!-- 商品分类 -->
+	<bean id="goodstypeAction" class="cn.itcast.erp.action.GoodstypeAction" scope="prototype">
+		<property name="goodstypeBiz" ref="goodstypeBiz" />
+	</bean>
+	<!-- 订单明细 -->
+	<bean id="orderdetailAction" class="cn.itcast.erp.action.OrderdetailAction" scope="prototype">
+		<property name="orderdetailBiz" ref="orderdetailBiz" />
+	</bean>
+	<!-- 订单 -->
+	<bean id="ordersAction" class="cn.itcast.erp.action.OrdersAction" scope="prototype">
+		<property name="ordersBiz" ref="ordersBiz" />
+		<property name="ordersDao" ref="ordersDao" />
+	</bean>
+	<!-- 供应商 -->
+	<bean id="supplierAction" class="cn.itcast.erp.action.SupplierAction" scope="prototype">
+		<property name="supplierBiz" ref="supplierBiz" />
+	</bean>
+	<!-- 报表 -->
+	<bean id="reportAction" class="cn.itcast.erp.action.ReportAction" scope="prototype">
+		<property name="reportBiz" ref="reportBiz"></property>
+	</bean>
+	
+</beans>
+	
