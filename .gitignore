@@ -1,8 +1,5 @@
 /.jsdtscope
 /.settings
-/target/
-/erp_biz/target/
-/erp_dao/target/
-/erp_entity/target/
-/erp_web/target/
-/erp_web/.settings/
+**/target
+**/.settings
+*.lst
