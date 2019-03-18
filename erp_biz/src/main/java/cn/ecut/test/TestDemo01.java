@@ -21,11 +21,11 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.DataFormat;
 import org.apache.poi.ss.util.CellRangeAddress;
 
-import cn.itcast.erp.dao.IEmpDao;
-import cn.itcast.erp.dao.IOrdersDao;
-import cn.itcast.erp.dao.ISupplierDao;
-import cn.itcast.erp.entity.Orderdetail;
-import cn.itcast.erp.entity.Orders;
+import cn.ecit.erp.dao.IEmpDao;
+import cn.ecit.erp.dao.IOrdersDao;
+import cn.ecit.erp.dao.ISupplierDao;
+import cn.ecit.erp.entity.Orderdetail;
+import cn.ecit.erp.entity.Orders;
 
 public class TestDemo01 {
 	private static IOrdersDao ordersDao;

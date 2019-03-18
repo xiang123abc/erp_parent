@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD
+3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+<class name="cn.ecit.erp.entity.Emp" table="emp">
+   <id name="uuid"> 
+         <generator class="identity"/> 
+    </id> 
+   <property name="empcode"></property>
+   <property name="name"></property>
+   <property name="tele"></property>
+   <property name="birthday"></property>
+   <property name="sex" type="java.lang.Integer"></property>
+   <property name="pwd"></property>
+   <property name="username"></property>
+   <property name="address"></property>
+</class>
+</hibernate-mapping>

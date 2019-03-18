@@ -13,29 +13,29 @@
 		http://www.springframework.org/schema/aop/spring-aop.xsd
 		">  
 	
-        <bean id="depDao" class="cn.itcast.erp.dao.impl.DepDao">
+        <bean id="depDao" class="cn.ecit.erp.dao.impl.DepDao">
 		 	<property name="sessionFactory" ref="sessionFactory"></property>
 	    </bean>
-	    <bean id="empDao" class="cn.itcast.erp.dao.impl.EmpDao">
+	    <bean id="empDao" class="cn.ecit.erp.dao.impl.EmpDao">
 		 	<property name="sessionFactory" ref="sessionFactory"></property>
 	    </bean>
-	    <bean id="goodsDao" class="cn.itcast.erp.dao.impl.GoodsDao">
+	    <bean id="goodsDao" class="cn.ecit.erp.dao.impl.GoodsDao">
 		 	<property name="sessionFactory" ref="sessionFactory"></property>
 	    </bean>
-	    <bean id="goodstypeDao" class="cn.itcast.erp.dao.impl.GoodstypeDao">
+	    <bean id="goodstypeDao" class="cn.ecit.erp.dao.impl.GoodstypeDao">
 		 	<property name="sessionFactory" ref="sessionFactory"></property>
 	    </bean>
-	    <bean id="orderdetailDao" class="cn.itcast.erp.dao.impl.OrderdetailDao">
+	    <bean id="orderdetailDao" class="cn.ecit.erp.dao.impl.OrderdetailDao">
 		 	<property name="sessionFactory" ref="sessionFactory"></property>
 	    </bean>
-	     <bean id="ordersDao" class="cn.itcast.erp.dao.impl.OrdersDao">
+	     <bean id="ordersDao" class="cn.ecit.erp.dao.impl.OrdersDao">
 		 	<property name="sessionFactory" ref="sessionFactory"></property>
 	    </bean>
-	    <bean id="supplierDao" class="cn.itcast.erp.dao.impl.SupplierDao">
+	    <bean id="supplierDao" class="cn.ecit.erp.dao.impl.SupplierDao">
 		 	<property name="sessionFactory" ref="sessionFactory"></property>
 	    </bean>
 	    <!-- 报表 -->
-		<bean id="reportDao" class="cn.itcast.erp.dao.impl.ReportDao">
+		<bean id="reportDao" class="cn.ecit.erp.dao.impl.ReportDao">
 			<property name="sessionFactory" ref="sessionFactory"></property>
 		</bean>
 	

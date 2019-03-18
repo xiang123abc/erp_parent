@@ -39,7 +39,7 @@
 	</bean>
 	
 	<!-- 自定义的realm -->
-	<bean id="erpRealm" class="cn.itcast.erp.realm.ErpRealm">
+	<bean id="erpRealm" class="cn.ecit.erp.realm.ErpRealm">
 		<property name="empBiz" ref="empBiz"></property>
 	</bean>
 </beans>

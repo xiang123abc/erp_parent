@@ -33,7 +33,7 @@
 			</props>
 		</property>
 		<property name="mappingLocations">
-			<value>classpath:cn/itcast/erp/entity/*.hbm.xml</value>
+			<value>classpath:cn/ecit/erp/entity/*.hbm.xml</value>
 		</property>
 	</bean>
 	

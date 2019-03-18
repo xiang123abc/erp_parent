@@ -13,34 +13,34 @@
 		http://www.springframework.org/schema/aop/spring-aop.xsd
 		">  
 	
-        <bean id="depBiz" class="cn.itcast.erp.biz.impl.DepBiz">
+        <bean id="depBiz" class="cn.ecit.erp.biz.impl.DepBiz">
 		 	<property name="depDao" ref="depDao"></property>
 	    </bean>
-	    <bean id="empBiz" class="cn.itcast.erp.biz.impl.EmpBiz">
+	    <bean id="empBiz" class="cn.ecit.erp.biz.impl.EmpBiz">
 		 	<property name="empDao" ref="empDao"></property>
 	    </bean>
 	<!-- 商品 -->
-	<bean id="goodsBiz" class="cn.itcast.erp.biz.impl.GoodsBiz">
+	<bean id="goodsBiz" class="cn.ecit.erp.biz.impl.GoodsBiz">
 		<property name="goodsDao" ref="goodsDao"></property>
 	</bean>
 	<!-- 商品分类 -->
-	<bean id="goodstypeBiz" class="cn.itcast.erp.biz.impl.GoodstypeBiz">
+	<bean id="goodstypeBiz" class="cn.ecit.erp.biz.impl.GoodstypeBiz">
 		<property name="goodstypeDao" ref="goodstypeDao"></property>
 	</bean>	
 	<!-- 订单明细 -->
-	<bean id="orderdetailBiz" class="cn.itcast.erp.biz.impl.OrderdetailBiz">
+	<bean id="orderdetailBiz" class="cn.ecit.erp.biz.impl.OrderdetailBiz">
 		<property name="orderdetailDao" ref="orderdetailDao"></property>
 	</bean>
 	<!-- 订单 -->
-	<bean id="ordersBiz" class="cn.itcast.erp.biz.impl.OrdersBiz">
+	<bean id="ordersBiz" class="cn.ecit.erp.biz.impl.OrdersBiz">
 		<property name="ordersDao" ref="ordersDao"></property>
 		<property name="supplierDao" ref="supplierDao"></property>		
 	</bean>
-	<bean id="supplierBiz" class="cn.itcast.erp.biz.impl.SupplierBiz">
+	<bean id="supplierBiz" class="cn.ecit.erp.biz.impl.SupplierBiz">
 		<property name="supplierDao" ref="supplierDao"></property>
 	</bean>
 	<!-- 报表 -->
-	<bean id="reportBiz" class="cn.itcast.erp.biz.impl.ReportBiz">
+	<bean id="reportBiz" class="cn.ecit.erp.biz.impl.ReportBiz">
 		<property name="reportDao" ref="reportDao"></property>
 	</bean>
 </beans>
