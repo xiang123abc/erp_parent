@@ -16,7 +16,7 @@
   	<struts.version>2.3.24</struts.version>
   	<hibernate.version>5.0.7.Final</hibernate.version>
   	<log4j.version>1.2.12</log4j.version>
-	<shiro.ver>1.2.3</shiro.ver>
+	<shiro.ver>1.5.0</shiro.ver>
   </properties>
   
   <dependencies>
